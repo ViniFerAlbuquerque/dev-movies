@@ -1,0 +1,41 @@
+{
+    "env": {
+        "browser":true,
+        "es2021":true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard",
+        "plugin:react-hooks/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "eslint-plugin-import-helpers"
+    ],
+    "rules": {
+        "prettier/pretier": [
+            "error",
+            {
+                "printWidth": 80,
+                "tabWidth": 2,
+                "singleQuote": true, //aspas simples
+                "traillingComma": "none", //vírgula no fim da linha
+                "arrowParens": "always",
+                "semi": false, // ponto e vírgula no fim da linha
+                "endOfLine": "auto"
+            }
+        ],
+        "react/react-in-jsx-scope": "off",
+        "react/proptypes": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
+    }
+
+}

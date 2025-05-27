@@ -1,5 +1,5 @@
-function Movies(){
 
+function Movies(){
     return (
         <div>
             <h1>Filmes</h1>
